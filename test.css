@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
-
 .nav-container {
     background-color: blue;
     border: none;
@@ -16,7 +14,7 @@
 .container {
     border: solid 10px #50e0ff;
     border-top: solid blue;
-    height: 100vh;
+    height: 90vh;
 }
 
 .sub-container {
@@ -24,14 +22,13 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
     align-content: center;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px;
+    padding: 20px;
 }
 
 .name {
-    font-size: 15px;
     background-color: #6e9fc1;
     text-align: left;
     align-content: center;
@@ -44,7 +41,7 @@
 .inst-box {
     background-color: #a3cae9;
     width: 30%;
-    height: 30px;
+    height: 35px;
     padding: 5px;
     margin: 10px;
 }
@@ -65,8 +62,8 @@
 
 .search-btn {
     background-color: #aaff00;
-    height: 30px;
-    width: 100px;
+    height: 40px;
+    width: 20%;
     border: none;
     padding: 10px;
     margin: 10px;
@@ -89,18 +86,36 @@
 .discription {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 10px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 40px;
 }
 
 .enquire-bnt {
     background-color: #ff790a;
+    height: 30%;
     border: none;
     padding: 15px;
-    margin-left: 60%;
     margin-bottom: 10px;
+    margin-right: 40px;
 }
-
-p {
-    padding-left: 20px;
+.location{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+@media screen and (min-width: 992px){
+    *{
+        font-size: 30px;
+    }
+    .apartment-container{
+        height: 75%;
+    }
+    .image{
+        height: 70%;
+    }
 }
